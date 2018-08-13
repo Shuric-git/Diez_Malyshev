@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Diez_Malyshev</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Prata&amp;subset=cyrillic" rel="stylesheet">
@@ -10,12 +11,126 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<img class="logo" src="img/diez_logo.png" alt="Логотип музыкальной школы Diez">
-		</header>
-		<main>
-			
-		</main>
+
+		<!-- Navigation and  -->
+
+		<section class="intro-block">
+			<header class="header">
+				<img class="logo" src="img/diez_logo.png" alt="Логотип музыкальной школы Diez">
+			</header>
+			<div class="intro-inner">
+				<h1 class="headline">Школа музыкального искусства</h1>
+				<p class="wewill">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
+				<button class="pre-lesson"><p>ВВОДНЫЙ УРОК</p></button>
+			</div>
+		</section>
+
+		
+		<!-- Navigation and  -->
+
+		<!-- courses -->
+
+		<section class="mus-grow">
+			<h1 class="mus-grow_title">Растим музыкантов</h1>
+			<div class="idols-singer">
+				<div class="card-inner">
+					<div class="card-text">
+						<h3>Вокал</h3>
+						<p>Пой, как Селин Дион и Эми Вайнхаус</p>
+					</div>
+				</div>
+			</div>
+			<div class="idols-guitar">
+				<div class="card-inner">
+					<div class="card-text">
+						<h3>Гитара</h3>
+						<p>Начни играть, как Джимми Хендрикс</p>
+					</div>
+				</div>
+			</div>
+			<div class="row_with_btn">
+				<div class="idols-piano">
+				<div class="card-inner">
+					<div class="card-text">
+						<h3>Фортепиано</h3>
+						<p>Чувствуй клавиши, как Людовико Эйнауди</p>
+					</div>
+				</div>
+			</div>
+			<button class="everyway-btn"><p class="everyway-text">ВСЕ НАПРАВЛЕНИЯ</p></button>
+			</div>
+		</section>
+
+		<!-- courses -->
+
+		<!-- Features -->
+
+		<section class="temp">
+			<h1 class="temp_title">Задаем темп</h1>
+			<div class="crew">
+				<div class="card-inner">
+					<div class="card-text">
+						<h3>Состав</h3>
+						<p>Учись только у профессионалов</p>
+					</div>
+				</div>
+			</div>
+			<div class="result">
+				<div class="card-inner">
+					<div class="card-text">
+						<h3>Результат</h3>
+						<p>Выступай на отчётных концертах</p>
+					</div>
+				</div>
+			</div>
+			<div class="row_with_btn">
+				<div class="studio">
+				<div class="card-inner">
+					<div class="card-text">
+						<h3>Студия</h3>
+						<p>Записывай песни каждый месяц</p>
+					</div>
+				</div>
+			</div>
+			<button class="everyway-btn"><p class="everyway-text_white">ВВОДНЫЙ УРОК</p></button>
+			</div>
+		</section>
+
+		<!-- features -->
+
+		<!-- video -->
+
+		<section class="wall">
+			<h1 class="wall_title">В стенах школы</h1>
+		</section>
+
+		<!-- video -->
+
+		<!-- map -->
+
+		<section class="wait">
+			<h1 class="wait_title">Ждем тебя</h1>
+			<p></p>
+			<div id="map" style="width: 290px; height: 290px"></div>
+		</section>
+
+		<!-- map -->
+
 	</div>
+
+		<!-- script -->
+
+		<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+		<script type="text/javascript">
+ 		var myMap;
+ 		ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+ 		function init () {
+   		myMap = new ymaps.Map("map", {
+     	center: [59.941993, 30.279423], // Координаты центра карты
+      	zoom: 16 // Zoom
+    });
+  }
+</script>
+
 </body>
 </html>
