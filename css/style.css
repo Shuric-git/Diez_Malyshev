@@ -78,6 +78,10 @@ body {
     margin-bottom: 90px;
 }
 
+.head_container_1280 {
+    display: none;
+}
+
 .intro-block {
     background: url(../img/bg_main_320.jpg);
     background-repeat: no-repeat;
@@ -90,6 +94,10 @@ body {
 
 .headline {
     margin: 0px 0px 10px 17px;
+}
+
+ .headline_1280 {
+    display: none;
 }
 
 .wewill {
@@ -265,4 +273,121 @@ body {
     width: 228px; height: 1px;
     background-image: url(../img/Rectangle1.jpg);
     background-size: 100%;
+}
+
+/*CSS for 1280*/
+
+@media (min-width: 1280px) { 
+
+h1 {
+    font-family: prata, serif;
+    color: #f9fcfc;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0;
+}
+
+h3 {
+
+  font-family: PT Sans;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+p {
+    font-family: PT Sans, sans-serif;
+    color: #f9fcfc;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+ .intro-block { 
+    width: 1280px;
+    min-height: 770px;
+    background-image: url(../img/bg_main.jpg);
+ }
+
+ .header {
+    display: inline-block;
+    margin: 0px 0px 205px 0px;
+ }
+
+ .head_container_1280 {
+    display: inline-flex;
+    margin: 30px 0px 0px 425px;
+}
+
+.headline {
+    display: none;
+}
+
+.headline_1280 {
+    width: 700px;
+    display: inline-block;
+    margin: 0px 0px 20px 55px;
+}
+
+.logo_1280 {
+    margin: 33px 0px 0px 53px;
+}
+
+.logo {
+    display: none;
+}
+
+.main_nav { 
+    margin-left: 220px;
+    display: flex;  
+    align-items: center;
+}
+
+.main_nav_link {
+    letter-spacing: 0em;
+    font-weight: normal;
+}
+
+.main_nav_list {
+    /*width:    40%;*/      
+    display: flex;
+    justify-content: space-between;
+    list-style: none;       
+    
+}
+.main_nav_list_item {
+    margin-right: 28px; 
+}
+
+.main_nav_list_item  a{
+    text-decoration: none;    
+    color: #000;
+}
+
+.wewill {
+    margin: 0px 0px 80px 55px;
+    width: 430px;
+}
+
+.pre-lesson {
+    margin: 0px 0px 0px 55px;
+    display: none;
+}
+
+
 }
