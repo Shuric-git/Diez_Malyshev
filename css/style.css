@@ -1,3 +1,7 @@
+/** {
+  box-sizing: border-box;
+}
+*/
 @font-face {
     font-family: 'PT Sans';
     src: url('subset-PTSans-Bold.woff2') format('woff2'),
@@ -92,6 +96,10 @@ body {
     margin: 24px 0px 0px 16px;
 }
 
+.logo_1280 {
+    display: none;
+}
+
 .headline {
     margin: 0px 0px 10px 17px;
 }
@@ -120,18 +128,25 @@ body {
     flex-wrap: wrap;
 }
 
+.mus-grow_1280 {
+    display: none;
+}
+
 .mus-grow_title {
     color: #021a23;
     margin: 0px 0px 12px 0px;
+    width: 235px;
+    border-top: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
 }
 
-.mus-grow_title::before, .mus-grow_title::after {
+/*.mus-grow_title::before, .mus-grow_title::after {
     content: "";
     display: inline-block;
     width: 228px; height: 1px;
     background-image: url(../img/Rectangle1.jpg);
     background-size: 100%;
-}
+}*/
 
 .idols-singer {
     width: 288px;
@@ -199,15 +214,18 @@ body {
 .temp_title {
     color: #021a23;
     margin: 0px 0px 12px 0px;
+    width: 235px;
+    border-top: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
 }
 
-.temp_title::before, .temp_title::after {
+/*.temp_title::before, .temp_title::after {
     content: "";
     display: inline-block;
     width: 228px; height: 1px;
     background-image: url(../img/Rectangle1.jpg);
     background-size: 100%;
-}
+}*/
 
 .crew {
     width: 288px;
@@ -243,18 +261,20 @@ body {
 }
 
 .wall_title {
-    width: 150px;
+    width: 235px;
     color: #021a23;
     margin: 0px 0px 12px 0px;
+    border-top: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
 }
 
-.wall_title::before, .wall_title::after {
+/*.wall_title::before, .wall_title::after {
     content: "";
     display: inline-block;
     width: 228px; height: 1px;
     background-image: url(../img/Rectangle1.jpg);
     background-size: 100%;
-}
+}*/
 
 .wait {
     width: 290px;
@@ -262,20 +282,22 @@ body {
 }
 
 .wait_title {
-    width: 150px;
+    width: 235px;
     color: #021a23;
     margin: 0px 0px 12px 0px;
+    border-top: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
 }
 
-.wait_title::before, .wait_title::after {
+/*.wait_title::before, .wait_title::after {
     content: "";
     display: inline-block;
     width: 228px; height: 1px;
     background-image: url(../img/Rectangle1.jpg);
     background-size: 100%;
-}
+}*/
 
-/*CSS for 1280*/
+/*===============CSS for 1280===============*/
 
 @media (min-width: 1280px) { 
 
@@ -283,8 +305,8 @@ h1 {
     font-family: prata, serif;
     color: #f9fcfc;
     font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 50px;
+    line-height: 50px;
     margin: 0;
 }
 
@@ -341,6 +363,8 @@ a {
 .headline_1280 {
     width: 700px;
     display: inline-block;
+    font-size: 55px;
+    line-height: 55px;
     margin: 0px 0px 20px 55px;
 }
 
@@ -389,5 +413,118 @@ a {
     display: none;
 }
 
+.mus-grow {
+    display: none;
+}
+
+.mus-grow_1280 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    min-height: 570px;
+    justify-content: space-around;
+    margin: 0 0 0 120px;
+}
+
+.mus-grow_title {
+    color: #021a23;
+    width: 553px;
+    border-top: 1px solid #eec643;
+    border-bottom: 1px solid #eec643;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    position: absolute;
+    bottom: -640px;
+    margin: 0 0 8px -50px;
+}
+
+.col2  {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.col3 {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.idols-guitar {
+    width: 100%;
+    height: 47%;
+    background-image: url(../img/idols-guitar1280.jpg);
+    margin: 0px 0px 0px 0px;
+}
+
+.idols-piano {
+    width: 100%;
+    height: 47%;
+    background-image: url(../img/idols-piano1280.jpg);
+    margin: 0px 0px 0px 0px;
+}
+
+.idols-singer {
+    width: 100%;
+    height: 47%;
+    background: url(../img/idols-singer1280.jpg);
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 0px;
+}
+
+.row_with_btn {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    width: 84%;
+    height: 47%;
+}
+
+
+.lessons {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/lessons1280.jpg);
+}
+
+.card-inner {
+    margin: 10px 0 0 31px;
+    width: 250px;
+}
+
+.card-text{
+    padding: 0px 0px 0px 0px;
+}
+
+.h3_guitar {
+    margin-bottom: 10px;
+}
+
+.p_guitar {
+    margin-bottom: 45px;
+}
+
+.everyway-btn {
+    background-color: #eec643;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    border: none;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    right: -29px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+
+.everyway-text {
+    color: #000;
+    width: 115px;
+    margin: 0px 0px 0px 14px;
+    text-align: left; 
+}
 
 }
