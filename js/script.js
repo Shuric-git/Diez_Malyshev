@@ -4,3 +4,9 @@ $(document).ready(function(){
 		$('.main_nav').slideToggle();
 	});
 });
+
+$(document).ready(function(){
+  $('.slider').slick({
+    setting-name: setting-value
+  });
+});

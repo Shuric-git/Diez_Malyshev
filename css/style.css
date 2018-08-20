@@ -382,13 +382,23 @@ body {
     text-align: left; 
 }
 
+.video_inner_wrapper {
+    position: relative;
+}
+
+.video_inner_text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
 .wall {
     width: 290px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .wall_title {
-    width: 235px;
+    width: 230px;
     color: #021a23;
     margin: 0px 0px 12px 0px;
     border-top: 1px solid #eec643;
@@ -405,6 +415,20 @@ body {
 
 .video_1280 {
     display: none;
+}
+
+.end-show_1280 {
+    display: none;
+}
+
+.arrow_hook:before{
+    content: ''; 
+    position: absolute; 
+    top: 25%;
+    left: 35%;
+    transform-origin: center;
+    border: 30px solid transparent;
+    border-left: 40px solid #eec643;
 }
 
 .wait {
@@ -437,7 +461,13 @@ body {
     display: none;
 }
 
-
+.pre-lesson_bottom {
+    background-color: #eec643;
+    width: 288px;
+    height: 60px;
+    margin: 20px auto;
+    border: none;
+}
 
 .order_change {
     display: flex;
@@ -921,6 +951,14 @@ label:before {
     padding: 5px;
 }
 
+.end-show_1280 {
+    display: block;
+}
+
+.end-show_360 {
+    display: none;
+}
+
 .video_inner_wrapper {
     position: relative;
 }
@@ -941,10 +979,6 @@ label:before {
     bottom: 10px;
     left: 15px;
     font-size: 10px;
-}
-
-.video_inner_text {
-
 }
 
 .video_inner_text_small-title {
@@ -1050,6 +1084,10 @@ label:before {
     transform-origin: center;
     border: 25px solid transparent;
     border-left: 40px solid #eec643;
+}
+
+.pre-lesson_bottom {
+    display: none;
 }
 
 }
